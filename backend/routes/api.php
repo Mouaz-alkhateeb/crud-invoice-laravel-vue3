@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,12 @@ Route::get('get_invoice/{id}', [InvoiceController::class, 'get_invoice']);
 Route::get('delete_invoice_items/{id}', [InvoiceController::class, 'delete_invoice_items']);
 Route::post('update_invoice/{id}', [InvoiceController::class, 'update_invoice']);
 Route::get('delete_invoice/{id}', [InvoiceController::class, 'delete_invoice']);
+
+///////////////------CRUD API-------///////////////
+
+
+Route::get('/get_all_products', [ProductController::class, 'get_all_products']);
+Route::post('/add_product', [ProductController::class, 'store']);
+Route::get('/get_product/{id}', [ProductController::class, 'show']);
+Route::post('/update_product/{id}', [ProductController::class, 'update']);
+Route::get('/delete_product/{id}', [ProductController::class, 'delete']);

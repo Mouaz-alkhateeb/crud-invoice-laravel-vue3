@@ -107,7 +107,7 @@ const onUpdate = (id) => {
 
 
       listCart.value = [];
-      router.push('/')
+      router.push('/invoices')
   }
 }
 

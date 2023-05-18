@@ -1,30 +1,51 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+import IndexInvoiceView from '@/views/invoices/IndexInvoiceView.vue';
+import AddInvoiceView from '@/views/invoices/AddInvoiceView.vue';
+import NotFoundView from '@/views/NotFoundView.vue';
+import ShowInvoiceView from '@/views/invoices/ShowInvoiceView.vue';
+import EditInvoiceView from '@/views/invoices/EditInvoiceView.vue';
+import IndexProductView from '@/views/products/IndexProductView.vue';
+import AddProductView from '@/views/products/AddProductView.vue';
+import EditProductView from '@/views/products/EditProductView.vue';
+import HelloWorldView from '@/views/HelloWorldView.vue'
 
-import HomeView from '../views/HomeView.vue';
-import NotFoundView from '../views/NotFoundView.vue';
-import AddView from '../views/AddView.vue';
-import ShowView from '../views/ShowView.vue';
-import EditView from '../views/EditView.vue';
+
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: '/',
-      component: HomeView
+      component: HelloWorldView
+    },
+    {
+      path: '/invoices',
+      component: IndexInvoiceView
     },
     {
       path: '/invoices/add',
-      component: AddView
+      component: AddInvoiceView
     },
     {
       path: '/invoices/show/:id',
-      component: ShowView
+      component: ShowInvoiceView
     },
     {
       path: '/invoices/edit/:id',
-      component: EditView
+      component: EditInvoiceView
+    },
+    {
+      path: '/products',
+      component: IndexProductView
+    },
+    {
+      path: '/products/add',
+      component: AddProductView
+    },
+    {
+      path: '/products/edit/:id',
+      component: EditProductView
     },
     {
       path: '/:pathMatch(.*)*',

@@ -2,7 +2,6 @@
 
 import { onMounted, ref } from "vue";
 import axios from 'axios';
-import { stringifyQuery } from "vue-router";
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -97,7 +96,7 @@ const onSave = () => {
 
 
     listCart.value = [];
-    router.push('/')
+    router.push('/invoices')
   }
 }
 

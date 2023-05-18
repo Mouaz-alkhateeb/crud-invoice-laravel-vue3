@@ -6,6 +6,6 @@
 
 <script setup>
 
-import showInvoice from "../components/invoices/show.vue";
+import showInvoice from "../../components/invoices/show.vue";
 
 </script>

@@ -36,6 +36,9 @@ const addInvoice = async () => {
 const onShow = (id) => {
   router.push('/invoices/show/'+id);
 }
+const onBack = () => {
+    router.push('/');
+}
 
 
 </script>
@@ -49,6 +52,7 @@ const onShow = (id) => {
     </div>
     <div class="d-flex align-center">
       <v-btn class="mr-3" @click="addInvoice()">New Invoice</v-btn>
+      <v-btn class="mr-3" @click="onBack()">Back</v-btn>
     </div>
   </v-card-title>
       <v-row class="mx-2">

@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import InvoiceIndex from "../components/invoices/index.vue";
+import InvoiceIndex from "../../components/invoices/index.vue";
 
 </script>

@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import EditInvoice from "../components/invoices/edit.vue";
+import EditInvoice from "../../components/invoices/edit.vue";
 
 </script>
